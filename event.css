@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #111;
+}
+ul,ol{
+    list-style: none;
+}
+body{
+    line-height: 23px;
+    font-size: 16px;
+    font-family: 'NanumBarunGothic';
+    color: #111;
+    min-width: 1350px;
+    overflow-x: hidden;
+}
+
+/*font*/
+/*ㅡ>기본폰트(나눔바른고딕)*/
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+   }
+   
+   @font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+   }
+   
+   @font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+   }
+   
+   .nanumbarungothic * {
+    font-family: 'NanumBarunGothic', sans-serif;
+   }
+
+
+   /*header*/
+#header{
+    height: 75px;
+    background: white;
+}
+#header_inner{
+    margin: 0 auto;
+    width: 1320px;
+}
+/*header-로고*/
+#logo{
+    float: left;
+    padding-top: 5px;
+}
+
+#logo img{
+    display: block;
+}
+/*header-메뉴*/
+#header_inner ul{
+    float: left;
+    margin-left: 160px;
+}
+#header_inner ul li{
+    float: left;
+    padding: 26px 60px;
+}
+#header_inner ul li a{
+    color: #c52601;
+    font-weight: bold;
+}
+#header_inner ul li a{
+    position: relative;
+}
+
+#header_inner ul li a span{
+    height:3px;
+    width:120%;
+    background-color: orangered;
+    position: absolute;
+    bottom:-27px;
+    left:50%;
+    transform:translateX(-50%) scaleX(0);
+}
+
+#header_inner ul li a:hover span{
+    transform: translateX(-50%) scaleX(1);
+    transition: all 0.3s;}
+    #header_inner ul li a:hover{
+        color: orangered;
+        transition: all 0.3s;
+    }
+
+/*header-회원가입,로그인*/
+#header_inner ol{
+    float: right;
+}
+#header_inner ol li{
+    float: left;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+/*main_banner*/
+#mb img{
+    width: 100%;
+    display: block;
+}
+
+/*event*/
+#event_inner{
+    width: 1320px;
+    margin: 0 auto;
+}
+#event_inner>h2{
+    text-align: center;
+    padding: 120px 0 90px 0;
+}
+#event_inner #event1{
+    height: 450px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+#event_inner #event2{
+    height: 450px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+/* ㅡ>box(event1)*/
+#event_inner #event1 #box h3{
+    padding: 35px 0 15px 30px;
+    font-size: 21px;
+}
+#event_inner #event1 #box p{
+    padding-left: 30px;
+    color: #605e5e;
+    
+}
+#event_inner #event1 #box{
+    position: relative;
+    width: 420px;
+    height: 450px;
+}
+#event_inner #event1 #box .red{
+    background: #bc0000;
+    color: white;
+    font-weight: bold;
+    font-size: 23px;
+    padding: 10px 20px;
+    width: 70px;
+    text-align: center;
+    position: absolute;
+    top: 288px;
+    left: 310px;
+}
+#event_inner #event1 #box a{
+    border-bottom: 3px solid #605e5e;
+    padding-bottom: 125px;
+}
+#event_inner #event1 #box a:hover{
+        border-bottom: 3px solid orangered;
+        transition: all 0.3s;
+}
+#event_inner #event1 #box a:hover img{
+    transition: all 0.2s;
+    opacity: 0.5;
+}
+
+/* ㅡ>box(event2)*/
+#event_inner #event2 #box h3{
+    padding: 35px 0 15px 30px;
+    font-size: 21px;
+}
+#event_inner #event2 #box p{
+    padding-left: 30px;
+    color: #605e5e;
+    
+}
+#event_inner #event2 #box{
+    position: relative;
+    width: 420px;
+    height: 450px;
+}
+#event_inner #event2 #box .grey{
+    background: #515151;
+    color: white;
+    font-weight: bold;
+    font-size: 23px;
+    padding: 10px 20px;
+    width: 70px;
+    text-align: center;
+    position: absolute;
+    top: 288px;
+    left: 310px;
+}
+#event_inner #event2 #box a{
+    border-bottom: 3px solid #605e5e;
+    padding-bottom: 125px;
+}
+#event_inner #event2 #box a:hover{
+        border-bottom: 3px solid black;
+        transition: all 0.3s;
+}
+#event_inner #event2 #box a:hover .opa{
+    transition: all 0.2s;
+    opacity: 1;
+}
+#event_inner #event2 #box .opa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+/*footer*/
+#footer{
+    height: 250px;
+    background: #585858;
+    width: 100%;
+}
+#footer_inner{
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 30px;
+    font-size: 14px;
+}
+#footer_inner>img{
+    float: left;
+}
+#footer_inner #company{
+    float: left;
+    text-align: center;
+    padding-left: 206px;
+    color: white;
+}
+#footer_inner #company ul li{
+    float: left;
+    padding:0 5px;
+}
+#footer_inner #company ul li a:hover{
+    border-bottom: 1px solid white;
+}
+#footer_inner #company ol li{
+    float: left;
+    padding:0 5px;
+}
+#footer_inner #company p{
+    clear: both;
+    padding: 10px 0 30px 0;
+}
+#footer_inner #company ul li a{
+    color: white;
+}
+#footer_inner #company ul, #footer_inner #company ol{
+    display: inline-block;
+}
+#footer_inner #company ol li img{
+    opacity: 0.5;
+}
+#footer_inner #company ol li img:hover{
+    opacity: 1;
+}
+.fix{
+    position: fixed;
+    z-index: 10;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 50%;
+    background: #fba653;
+}
+.fix a{
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    padding: 20px 18px;
+    text-align: center;
+}
